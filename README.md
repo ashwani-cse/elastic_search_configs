@@ -11,35 +11,29 @@ This repository contains configuration files for setting up Elasticsearch and Ki
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/ashwani-cse/elastic_search_configs.git
     ```
 
 2. Navigate to the cloned directory:
 
     ```bash
-    cd <repository_directory>
+    cd elastic_search_configs
     ```
 
-3. Create a `.env` file based on the provided `.env.sample` and set the desired values for the environment variables:
-
-    ```bash
-    touch .env
-    ```
-
-4. Customize the `.env` file with your desired configuration parameters:
+3. Customize the `.env` file with your desired configuration parameters:
     - `STACK_VERSION`: Version of Elastic products (Elasticsearch and Kibana).
     - `ES_PORT`: Port to expose Elasticsearch HTTP API to the host.
     - `KIBANA_PORT`: Port to expose Kibana to the host.
 
-5. Start Elasticsearch and Kibana containers using Docker Compose:
+4. Start Elasticsearch and Kibana containers using Docker Compose:
 
     ```bash
     docker-compose up -d
     ```
 
-6. Access Elasticsearch:
+5. Access Elasticsearch:
     - Run `curl -X GET "http://localhost:${ES_PORT}"`
-    - Reponse::
+    - Response::
    ```json
    {
     "name" : "ec1f1e3f8965",
@@ -60,12 +54,12 @@ This repository contains configuration files for setting up Elasticsearch and Ki
     }
     ```
 
-7. Access Kibana:
+6. Access Kibana:
     - Open a web browser and navigate to `http://localhost:${KIBANA_PORT}` to access Kibana dashboard UI.
 
 ## Configuration Details
 
-The Docker Compose configuration (`docker-compose.yaml`) defines two services: `elasticsearch` and `kibana`.
+The Docker Compose configuration (`docker-compose.yaml`) defines `elasticsearch` and `kibana` services.
 - `elasticsearch`: Elasticsearch service configuration.
 - `kibana`: Kibana service configuration.
 
@@ -74,4 +68,4 @@ Environment variables specified in the `.env` file are used to customize the con
 Volumes are used to persist data for Elasticsearch and Kibana.
 
 ## Notes
-- This configuration is suitable for development and testing purposes. For production environments, consider configuring security features and additional settings as required.
+- This configuration is suitable for development and testing purposes. You can just consider configuring security features and additional settings as required for production environments.
