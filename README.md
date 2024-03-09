@@ -69,3 +69,10 @@ Volumes are used to persist data for Elasticsearch and Kibana.
 
 ## Notes
 - This configuration is suitable for development and testing purposes. You can just consider configuring security features and additional settings as required for production environments.
+
+## Social Profile
+- [LinkedIn](https://www.linkedin.com/in/ashwanicse/)
+- [Leetcode](https://leetcode.com/ashwani__kumar/)
+- [Topmate](https://topmate.io/ashwanikumar)
+## Linkedin Newsletter
+- [Subscribe](https://www.linkedin.com/newsletters/7084124970443767808/)
