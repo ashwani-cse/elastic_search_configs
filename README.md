@@ -35,6 +35,11 @@ This repository contains configuration files for setting up Elasticsearch and Ki
     ```bash
     docker-compose down
     ```
+Note: If above command not working then you can use below command to stop the cluster:
+    ```bash
+    docker-compose down -v
+    ```
+else close the docker desktop.
 6. Access Elasticsearch:
     - Run `curl -X GET "http://localhost:${ES_PORT}"`
     - Response::
