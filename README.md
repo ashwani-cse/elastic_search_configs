@@ -30,8 +30,12 @@ This repository contains configuration files for setting up Elasticsearch and Ki
     ```bash
     docker-compose up -d
     ```
+5. Stop the cluster, run the following command:
 
-5. Access Elasticsearch:
+    ```bash
+    docker-compose down
+    ```
+6. Access Elasticsearch:
     - Run `curl -X GET "http://localhost:${ES_PORT}"`
     - Response::
    ```json
@@ -54,7 +58,7 @@ This repository contains configuration files for setting up Elasticsearch and Ki
     }
     ```
 
-6. Access Kibana:
+7. Access Kibana:
     - Open a web browser and navigate to `http://localhost:${KIBANA_PORT}` to access Kibana dashboard UI.
 
 ## Configuration Details
