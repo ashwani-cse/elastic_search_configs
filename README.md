@@ -17,7 +17,7 @@ This repository contains configuration files for setting up Elasticsearch and Ki
 2. Navigate to the cloned directory:
 
     ```bash
-    cd elastic_search_configs
+    cd elastic_search_configs/config
     ```
 
 3. Customize the `.env` file with your desired configuration parameters:
