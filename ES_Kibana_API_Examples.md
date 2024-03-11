@@ -154,3 +154,47 @@
 ```json
   DELETE /product/_doc/1
 ```
+
+### Match queries
+1. match query on title
+```json
+  GET /product/_search
+  {
+    "query": {
+      "match": {
+        "title": "nokia"
+      }
+    }
+  }
+```
+2. Query for Category name
+```json
+  GET /product/_search
+  {
+    "query": {
+      "match": {
+        "category.name": {
+          "query": "Phone"
+        }
+      }
+    }
+  }
+```
+### Fuzzy queries
+1. Fuzzy query on title
+```json
+  GET /product/_search
+  {
+    "query": {
+      "fuzzy": {
+        "title": {
+          "value": "nokya",
+          "fuzziness": "AUTO"
+        }
+      }
+    }
+  }
+```
+
+
+
